@@ -43,7 +43,7 @@ public class ControladorVaca {
             mapa.put(codigo, vaca);
         }
     }
-    public void dellete(int codigo){
+    public void delete(int codigo){
         for (Entry<Integer,Vaca> vaca:mapa.entrySet()) {
             if(vaca.getKey()== codigo){
                 mapa.remove(codigo);
@@ -52,6 +52,10 @@ public class ControladorVaca {
         }
     }
     public void leer(){
+        for (Entry<Integer, Vaca> vaca:mapa.entrySet()){
+            System.out.println(" codigo "+vaca.getKey()+"= Informacion  " +vaca.getValue());
+            
+        }
         
     }
     

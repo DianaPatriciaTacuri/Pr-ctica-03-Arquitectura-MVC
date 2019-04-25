@@ -39,7 +39,7 @@ public class ControladorPerro {
             lista.add(objeto);
         }
     }
-    public void dellete(int codigo){
+    public void delete(int codigo){
         for (Perro perro : lista) {
             if(perro.getCodigo()== codigo){
                 lista.remove(perro);
